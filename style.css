@@ -124,6 +124,13 @@
 	font-weight: 300;
 	margin:10px 0;
 }
+.services{
+	background-color: #70bfff;
+	height: 50px;
+}
+.services__container{
+
+}
 @media (max-width: 1250px){
 	.about__container__text{
 		max-width: 300px;
