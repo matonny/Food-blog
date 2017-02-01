@@ -198,6 +198,10 @@
 		flex-direction: column-reverse;
 		text-align: justify;
 	}
+	.about__container--photo{
+		width:200px;
+		height: 200px;
+	}
 	.about__container__text{
 		margin:10px;
 		align-items: center;
