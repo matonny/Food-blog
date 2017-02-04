@@ -1,3 +1,4 @@
+img { max-width: 100%; }
 .header__foodblog{
 	background-image: url('images/main-background.png');
 	background-repeat:no-repeat;
@@ -236,7 +237,7 @@
 	margin:15px;
 }
 .gallery__container__photos__fifth__image, .gallery__container__photos__fourth__image{
-	width:1000px;
+
 }
 @media (max-width: 1250px){
 	.about__container__text{
