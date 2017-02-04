@@ -2,6 +2,7 @@
 	background-image: url('images/main-background.png');
 	background-repeat:no-repeat;
 	background-size: 100% 100%;
+
 }
 .header__container{
 	display: flex;
@@ -38,15 +39,14 @@
 	transition: 0.2s;
 }
 .foodblog{
-	height: 800px;
+	height:900px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 }
 .foodblog__content__text{
-	padding-top:400px;
+	margin-top:20vh;
 	margin-left: 13vw;
-	margin-top: -200px;
 }
 .foodblog__content__text__title{
 	font-size:60px;
@@ -126,10 +126,118 @@
 }
 .services{
 	background-color: #70bfff;
-	height: 50px;
+	margin:0;
 }
 .services__container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.services__container__title{
+	margin:100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('images/tomato.png');
+	background-repeat: no-repeat;
+	background-position: 100% 0; 		
+	background-size:80% 100%;
+	font-family:'Raleway', sans-serif;
+	font-weight: bold;
+	color:white;
+	font-size:90px;
+	text-transform: capitalize;
+	width:600px;
+	height: 527px;
+	padding:0;
+}
+.services__container__list{
+	margin: 100px 0;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding:0;
+}
+.services__container__list__online, .services__container__list__quality, .services__container__list__delivery, .services__container__list__organized{
+	display: flex;
+	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+	margin:10px 0;
 
+}
+.services__container__list__online__text, .services__container__list__quality__text, .services__container__list__delivery__text, .services__container__list__organized__text{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width:300px;
+	height:100px;
+	background-color:white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: capitalize;
+	border-right:1px solid #9d9d9d;
+	margin:0;
+
+}
+.services__container__list__online__box, .services__container__list__quality__box, .services__container__list__delivery__box, .services__container__list__organized__box{
+	width:99px;
+	height: 100px;
+	margin:0;
+	padding:0;
+	background-color:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.gallery{
+	background-color:#ffe92f;
+}
+.gallery__container{
+	padding-top:100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.gallery__container__text__title{
+	text-align: center;
+	margin:20px 0;
+	font-size: 90px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color:#262626;
+}
+.gallery__container__text__description{
+	margin:0;
+	max-width:560px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color:#262626;
+}
+.gallery__container__photos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+}
+.gallery__container__photos__toprow{
+	display: flex;
+	height: 568px;
+	align-items: center;
+}
+.gallery__container__photos__bottomrow{
+	display: flex;
+}
+.gallery__container__photos__toprow__right{
+	display: flex;
+	flex-direction: column;
+}
+.gallery__container__photos__toprow__right__top, .gallery__container__photos__toprow__right__bottom{
+	height:268px;
+	margin:15px;
 }
 @media (max-width: 1250px){
 	.about__container__text{
@@ -142,6 +250,15 @@
 	}
 	.about__container__text__title{
 		font-size:50px;
+	}
+	.services__container__title{
+		width:400px;
+		height:355px;
+		font-size:50px;
+	}
+	.services__container__list__online__text, .services__container__list__quality__text, .services__container__list__delivery__text, .services__container__list__organized__text{
+		width:200px;
+		font-size:18px;
 	}
 }
 @media (max-width: 800px){
@@ -216,4 +333,23 @@
 	.about__container__text__title{
 		font-size:50px;
 	}
+	.services__container{
+		flex-direction: column-reverse;
+	}
+	.services__container__title{
+		margin:20px 0;
+		width:280px;
+		height: 250px;
+		font-size:45px;
+	}
+	.services__container__list{
+		margin:20px 0;
+	}
+	.services__container__list__online__text, .services__container__list__quality__text, .services__container__list__delivery__text, .services__container__list__organized__text{
+		height:67px;
+	}
+	.services__container__list__online__box, .services__container__list__quality__box, .services__container__list__delivery__box, .services__container__list__organized__box{
+		height: 67px;
+		width: 67px;
+	}	
 }
