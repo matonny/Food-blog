@@ -789,8 +789,40 @@ img { max-width: 100%; }
 	.subscribe__text__label__button{
 		width:210px;
 	}
-	.blog__gallery__container__photo1, .blog__gallery__container__photo2, .blog__gallery__container__photo3{
+	.blog__text__description{
+		max-width: 300px;
+	}
+	.blog__gallery__container__photo{
 		width:320px;
+	}
+	.contact{
+		background-size: cover;
+		max-width: 800px;
+	}
+	.contact__text__title{
+		font-size: 70px;
+	}
+	.contact__information{
+		flex-direction: column-reverse;
+		margin:0 auto;
+		align-items: center;
+	}
+	.contact__information__address{
+		max-width: 270px;
+	}
+	.contact__information__form{
+		margin:0;
+	}
+	.contact__information__form__input{
+		max-width:270px;
+		margin:10px 0;
+	}
+	.contact__information__form__textarea{
+		max-width: 270px;
+	}
+	.footer{
+		height:100%;
+		flex-direction: column;
 	}
 }
 
