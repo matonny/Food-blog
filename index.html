@@ -7,19 +7,22 @@
 	<link href='https://necolas.github.io/normalize.css/5.0.0/normalize.css' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
 	<link href='style.css' rel='stylesheet'>
 </head>
 <body>
 	<section class='header__foodblog'>
-		<section class='header'>
+		<section class='header' id='header'>
 			<div class='header__container'>
 				<h1 class='header__container__title'>
 					Cahee
 				</h1>
 				<nav class='header__container__nav'>
+					<a href='#' class='header__container__nav__icon'></a>	
 					<ul class='header__container__nav__list closed'>
 						<li class='header__container__nav__list__item closed'>
-							<a href='' class='header__container__nav__list__item__link'>Home</a>
+							<a href='#header' class='header__container__nav__list__item__link'>Home</a>
 						</li>
 						<li class='header__container__nav__list__item closed'>
 							<a href='#about' class='header__container__nav__list__item__link'>About</a>
@@ -31,10 +34,10 @@
 							<a href='#gallery' class='header__container__nav__list__item__link'>Gallery</a>
 						</li>
 						<li class='header__container__nav__list__item closed'>
-							<a href='' class='header__container__nav__list__item__link'>Blog</a>
+							<a href='#blog' class='header__container__nav__list__item__link'>Blog</a>
 						</li>
 						<li class='header__container__nav__list__item closed'>
-							<a href='' class='header__container__nav__list__item__link'>Contact</a>
+							<a href='#contact' class='header__container__nav__list__item__link'>Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -159,7 +162,7 @@
 			</label>
 		</div>
 	</section>
-	<section class='blog'>
+	<section class='blog' id='blog'>
 		<div class='blog__text'>
 			<h2 class='blog__text__title'>
 				Blog
@@ -230,7 +233,7 @@
 			View more
 		</button>
 	</section>
-	<section class='contact'>
+	<section class='contact' id='contact'>
 		<div class='contact__text'>
 			<h2 class='contact__text__title'>
 				Contact 
@@ -286,5 +289,6 @@
 			Made with <span class='footer__sign__love'>love</span> by matonny
 		</p>
 	</footer>
+<script src='javascript.js'></script>
 </body>
 </html>
